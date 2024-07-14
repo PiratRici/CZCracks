@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #202020;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff3366;
+    padding: 10px 20px;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a, nav ul li input {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3366;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li input:hover {
+    background-color: #ff6680;
+}
+
+nav ul li input {
+    padding: 10px;
+    border: 1px solid #ff3366;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+nav ul li button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff3366;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #ff6680;
+}
+
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.post {
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.post img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.post h3 {
+    padding: 10px;
+    margin: 0;
+}
+
+.post p {
+    padding: 0 10px 10px 10px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    color: #fff;
+    background-color: #ff3366;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #ff6680;
+}
