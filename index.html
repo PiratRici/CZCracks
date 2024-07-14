@@ -14,8 +14,18 @@
             padding: 0;
         }
 
+        .video-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            object-fit: cover;
+        }
+
         header {
-            background-color: #ff0066;
+            background-color: rgba(255, 0, 102, 0.9); /* Semi-transparent background */
             padding: 10px 20px;
             display: flex;
             justify-content: space-between;
@@ -46,6 +56,10 @@
         #main-content {
             padding: 20px;
             text-align: center;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            border-radius: 10px;
+            display: inline-block;
+            margin-top: 20px;
         }
 
         h2 {
@@ -54,7 +68,7 @@
 
         .post {
             display: inline-block;
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
             margin: 20px;
             padding: 20px;
             border-radius: 10px;
@@ -79,7 +93,7 @@
         }
 
         footer {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -90,6 +104,11 @@
     </style>
 </head>
 <body>
+    <video autoplay muted loop class="video-background">
+        <source src="animated-background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
     <header>
         <div class="logo">
             <h1>CZCracks</h1>
@@ -97,6 +116,8 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="discord.html">Discord</a></li>
             </ul>
         </nav>
     </header>
@@ -105,7 +126,7 @@
         <h2>Vítej na CZCracks</h2>
 
         <div class="post" data-title="Raft">
-            <a href="game1.html">
+            <a href="raft.html">
                 <img src="raft.jpg" alt="Raft">
                 <h3>Raft 1.09 Zdarma s Multiplayerem</h3>
                 <p>Zahraj si Raft Verzi v1.09 Zadarmo s Multiplayerem s Kamarady!</p>
@@ -113,7 +134,7 @@
         </div>
 
         <div class="post" data-title="Phasmophobia">
-            <a href="game2.html">
+            <a href="phasmophobia.html">
                 <img src="game2.png" alt="Phasmophobia">
                 <h3>Phasmophobia v0.10.0.0 Zdarma ONLINE</h3>
                 <p>Zahraj si Horrorovou Hru Phasmophobia Zadarmo s Kamarady!</p>
@@ -121,7 +142,7 @@
         </div>
 
         <div class="post" data-title="Chained Together">
-            <a href="game3.html">
+            <a href="chainedtogether.html">
                 <img src="game3.jpg" alt="Chained Together">
                 <h3>Chained Together Zdarma</h3>
                 <p>Vyzkoušejte kooperativní hru Chained Together s přáteli!</p>
@@ -129,7 +150,7 @@
         </div>
 
         <div class="post" data-title="BeamNG.drive">
-            <a href="game4.html">
+            <a href="beamngdrive.html">
                 <img src="game4.jpg" alt="BeamNG.drive">
                 <h3>BeamNG.drive Zdarma</h3>
                 <p>Zahraj si realistickou jízdní hru BeamNG.drive zdarma!</p>
@@ -137,7 +158,7 @@
         </div>
 
         <div class="post" data-title="Palworld">
-            <a href="game5.html">
+            <a href="palworld.html">
                 <img src="game5.jpg" alt="Palworld">
                 <h3>Palworld Zdarma</h3>
                 <p>Zažijte dobrodružství v Palworld s přáteli!</p>
@@ -145,7 +166,7 @@
         </div>
 
         <div class="post" data-title="Bodycam">
-            <a href="game6.html">
+            <a href="bodycam.html">
                 <img src="game6.jpg" alt="Bodycam">
                 <h3>Bodycam Zdarma</h3>
                 <p>Zahrajte si realistickou FPS hru Bodycam!</p>
@@ -153,5 +174,8 @@
         </div>
     </div>
 
+    <footer>
+        <p>&copy; 2024 CZCracks</p>
+    </footer>
 </body>
 </html>
