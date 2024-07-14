@@ -5,6 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CZCracks</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add your styles here or link to an external stylesheet */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff0066;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            margin: 0;
+            color: white;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #main-content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .post {
+            display: inline-block;
+            background-color: #333;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        .post img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .post h3 {
+            color: #ff66b2;
+            font-size: 20px;
+        }
+
+        .post p {
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -16,38 +96,64 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="games.html">Games</a></li>
                 <li><a href="discord.html">Discord</a></li>
-                <li>
-                    <input type="text" id="search-input" placeholder="Search...">
-                    <button onclick="searchGames()">Search</button>
-                </li>
             </ul>
         </nav>
     </header>
 
-    <section id="games">
+    <div id="main-content">
         <h2>Vítej na CZCracks</h2>
-        <div class="post-container">
-            <div class="post" data-title="Raft">
-                <a href="raft.html">
-                    <img src="raft.jpg" alt="Raft">
-                    <h3>Raft 1.09 Zdarma s Multiplayerem</h3>
-                    <p>Zahraj si Raft Verzi v1.09 Zdarma s Multiplayerem s Kamarády!</p>
-                </a>
-            </div>
-            <div class="post" data-title="Phasmophobia">
-                <a href="https://bowfile.com/bdOb#popup1">
-                    <img src="phasmophobia.jpg" alt="Phasmophobia">
-                    <h3>Phasmophobia v0.10.0.0 Zdarma ONLine</h3>
-                    <p>Zahraj si Horrorovou Hru Phasmophobia Zdarma s kamarády!</p>
-                </a>
-            </div>
+
+        <div class="post" data-title="Raft">
+            <a href="raft.html">
+                <img src="raft.jpg" alt="Raft">
+                <h3>Raft 1.09 Zdarma s Multiplayerem</h3>
+                <p>Zahraj si Raft Verzi v1.09 Zadarmo s Multiplayerem s Kamarady!</p>
+            </a>
         </div>
-    </section>
+
+        <div class="post" data-title="Phasmophobia">
+            <a href="phasmophobia.html">
+                <img src="phasmophobia.jpg" alt="Phasmophobia">
+                <h3>Phasmophobia v0.10.0.0 Zdarma ONLINE</h3>
+                <p>Zahraj si Horrorovou Hru Phasmophobia Zadarmo s Kamarady!</p>
+            </a>
+        </div>
+
+        <div class="post" data-title="Chained Together">
+            <a href="chainedtogether.html">
+                <img src="chainedtogether.jpg" alt="Chained Together">
+                <h3>Chained Together Zdarma</h3>
+                <p>Vyzkoušejte kooperativní hru Chained Together s přáteli!</p>
+            </a>
+        </div>
+
+        <div class="post" data-title="BeamNG.drive">
+            <a href="beamngdrive.html">
+                <img src="beamngdrive.jpg" alt="BeamNG.drive">
+                <h3>BeamNG.drive Zdarma</h3>
+                <p>Zahraj si realistickou jízdní hru BeamNG.drive zdarma!</p>
+            </a>
+        </div>
+
+        <div class="post" data-title="Palworld">
+            <a href="palworld.html">
+                <img src="palworld.jpg" alt="Palworld">
+                <h3>Palworld Zdarma</h3>
+                <p>Zažijte dobrodružství v Palworld s přáteli!</p>
+            </a>
+        </div>
+
+        <div class="post" data-title="Bodycam">
+            <a href="bodycam.html">
+                <img src="bodycam.jpg" alt="Bodycam">
+                <h3>Bodycam Zdarma</h3>
+                <p>Zahrajte si realistickou FPS hru Bodycam!</p>
+            </a>
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2024 CZCracks</p>
     </footer>
-
-    <script src="scripts.js"></script>
 </body>
 </html>
